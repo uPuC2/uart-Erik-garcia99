@@ -229,6 +229,7 @@ UART_setColor(uint8_t com, uint8_t color)
 }
 
 // Utils
+
 void itoa(uint16_t number, char *str, uint8_t base)
 {
 
@@ -258,7 +259,7 @@ void itoa(uint16_t number, char *str, uint8_t base)
             temp /= base;
         }
 
-        for (int i = buf_idx - 1; i >= 0; i--)
+        for (int8_t i = buf_idx - 1; i >= 0; i--)
         {
             aux[index++] = buffer[i];
         }
